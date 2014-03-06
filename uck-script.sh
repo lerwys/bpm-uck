@@ -10,7 +10,15 @@ echo "deb-src http://security.ubuntu.com/ubuntu raring-security multiverse" >> /
 apt-get update && \
 apt-get install binutils build-essential gcc g++ libreadline6-dev \
 linux-headers-generic linux-headers-$(uname -r)  git git-core vim \
-gitk meld make autoconf automake libmxml-dev libserial-dev && \
+gitk meld make autoconf automake libmxml-dev libserial-dev \
+libsqlite3-dev sqlite3 bzip2 libbz2-dev && \
+wget http://python.org/ftp/python/3.3.2/Python-3.3.2.tar.bz2 && \
+tar xjf ./Python-3.3.2.tar.bz2 && \
+cd ./Python-3.3.2 && \
+./configure --prefix=/opt/python3.3 && \
+make && \
+sudo make install && \
+ln -s /opt/python3.3/bin/python3.3 /usr/bin/py && \
 sudo adduser bpm-lnls && \
 mkdir -p /home/bpm-lnls/Repos && \
 cd /home/bpm-lnls/Repos && \

@@ -11,7 +11,7 @@ apt-get update && \
 apt-get install binutils build-essential gcc g++ libreadline6-dev \
 linux-headers-generic linux-headers-$(uname -r)  git git-core vim \
 gitk meld make autoconf automake libmxml-dev libserial-dev \
-libsqlite3-dev sqlite3 bzip2 libbz2-dev && \
+libsqlite3-dev sqlite3 bzip2 libbz2-dev openssh-server && \
 wget http://python.org/ftp/python/3.3.2/Python-3.3.2.tar.bz2 && \
 tar xjf ./Python-3.3.2.tar.bz2 && \
 cd ./Python-3.3.2 && \

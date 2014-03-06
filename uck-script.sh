@@ -18,7 +18,6 @@ cd ./Python-3.3.2 && \
 ./configure --prefix=/opt/python3.3 && \
 make && \
 sudo make install && \
-ln -s /opt/python3.3/bin/python3.3 /usr/bin/py && \
 sudo adduser bpm-lnls && \
 mkdir -p /home/bpm-lnls/Repos && \
 cd /home/bpm-lnls/Repos && \
